@@ -1,0 +1,11 @@
+.body{
+    background-color: rgb(40,40,40);
+    color: darkgray;
+    width: 300px;
+    text-align: center;
+}
+.Button{
+    width: 145px;
+    display: inline-block;
+    cursor: pointer;   
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cookie Clicker</title>
+        <style>
+            @font-face{
+                font-family: Cartoon;
+                src:url("cartoon_cookies.ttf");
+            }
+
+            body{
+                font-family: Cartoon;
+                background-color: lightgray;
+                text-align: center;
+                font-size: 200%;
+            }
+
+            #instructions{
+                border: double 10px black;
+                padding: 8px;
+                width: 80%;
+                margin: auto;
+                background-color: darkgray
+            }
+        </style>
+        <script>
+            var cookies = 0;
+
+            function addCookie(){
+                cookies += 1;
+                document.getElementById("count").innerHTML = cookies;
+            }
+
+            var nightMode = false;
+            
+            function switchMode(){
+                nightMode = !nightMode;
+                if (nightMode){
+                    document.body.style.backgroundColor = "black";
+                    document.body.style.color = "lightgray";
+                }
+                else{
+                    document.body.style.backgroundColor = "lightgray";
+                    document.body.style.color = "black";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Cookie Clicker</h1>
+
+        <p id="instructions">Cookies! That's the talk of the town. No one
+            knows why, but everyone wants some.
+            Everytime you click on the cookie below,
+            you'll receive one sweet, sweet virtual cookie.
+            What are you waiting for? Get clicking!</p>
+
+        <p>Cookies: <span id="count">0</span></p>
+        <div>
+            <img src="base_cookie.png" width="25%" onclick="addCookie()"/>
+        </div>
+        <div>
+            <input type="button" value="Toggle Display" onclick="switchMode()"/>
+        </div>
+    </body>
+</html>

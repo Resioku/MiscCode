@@ -1,0 +1,25 @@
+.userSection{
+    padding:10px; border:1px solid gray;
+    width: 300px;
+}
+.control{
+    padding:10px;
+}
+.txtbox{
+    padding: 4px;
+    border-radius:4px;
+    margin: 4px;
+    border: 1px solid #ced4da;
+}
+.btn{
+    background: #007bff;
+    border-color: #007bff;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+#userOutput{
+    display: none;
+}

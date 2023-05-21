@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Resioku</title>
+        <link href = "app.css" rel = "stylesheet"/>
+    </head>
+
+    <body>
+        <section id="userInput" class="userSection">
+
+            <div class="control">
+                <label>First Name</label>
+                <input id="txtFname" class="txtbox" type="text" value=""/>
+            </div>
+
+            <div class="control">
+                <label>Last Name</label>
+                <input id="txtLname" class="txtbox" type="text" value=""/>
+            </div>
+
+            <div class="control">
+                <button onclick="getUserData()" class="btn">Log in</button>
+            </div>
+
+        </section>
+        <section id="userOutput" class="userSection">
+            User Details
+            <hr/>
+            <p id="pUserName"></p>
+
+            <button onclick="goHome()" class="btn">Log out</button>
+        </section>
+        <script src = "app.js"></script>
+    </body>
+</html>
